@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateBase 
+namespace Ebac.StateMachine
+{
+    public class StateBase 
 {
     public virtual void OnStateEnter()
     {
@@ -18,5 +20,6 @@ public class StateBase
     {
         Debug.Log("onStateExit");
     }
+}
 }
 

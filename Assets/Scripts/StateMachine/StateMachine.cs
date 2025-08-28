@@ -3,22 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test
-{
-    public enum Test2
-    {
-        NONE
-    }
-
-    public void Aa()
-    {
-        StateMachine<Test2> stateMachine = new StateMachine<Test2>();
-
-        stateMachine.RegisterStates(Test.Test2.NONE, new StateBase());
-    }
-
-}
-
+namespace Ebac.StateMachine
+{ 
 public class StateMachine<T> where T : System.Enum
 {
 
@@ -31,10 +17,11 @@ public class StateMachine<T> where T : System.Enum
     {
         get { return _currentState; }
     }
+    
 
     public void Init()
     {
-        dictionaryState = new Dictionary<T, StateBase>();
+            dictionaryState = new Dictionary<T, StateBase>();
     }
 
     public void RegisterStates(T typeEnum, StateBase state)
@@ -58,6 +45,7 @@ public class StateMachine<T> where T : System.Enum
         if (_currentState != null) _currentState.OnStateStay();
     }
 
+}
 }
 
 
