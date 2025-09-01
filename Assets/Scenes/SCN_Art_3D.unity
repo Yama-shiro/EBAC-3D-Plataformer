@@ -1250,7 +1250,9 @@ MonoBehaviour:
   characterController: {fileID: 254652112}
   speed: 10
   turnSpeed: 250
-  gravity: -9.8
+  gravity: 9.8
+  jumpSpeed: 7
+  jumpKeyCode: 32
 --- !u!4 &254652114
 Transform:
   m_ObjectHideFlags: 0
@@ -5660,7 +5662,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179709625}
-  m_LocalRotation: {x: 0.24446768, y: 0.000000018593115, z: -0.000000004687651, w: 0.9696575}
+  m_LocalRotation: {x: 0.24446768, y: 0.000000018653607, z: -0.0000000047029025, w: 0.9696575}
   m_LocalPosition: {x: 411.07, y: 2.2399998, z: 35.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7377,7 +7379,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500100153}
-  m_LocalRotation: {x: 0.24446768, y: 0.000000018593115, z: -0.000000004687651, w: 0.9696575}
+  m_LocalRotation: {x: 0.24446768, y: 0.000000018653607, z: -0.0000000047029025, w: 0.9696575}
   m_LocalPosition: {x: 411.07, y: 2.2399998, z: 35.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
