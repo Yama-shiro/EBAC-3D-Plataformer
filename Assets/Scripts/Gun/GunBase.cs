@@ -8,20 +8,20 @@ public class GunBase : MonoBehaviour
 
     public Transform positionToShoot;
     public float timeBeetweenShots = 0.3f;
-    public Transform playerSideReference;
 
     public Coroutine _currentCoroutine;
 
 
 
-        IEnumerator ShootCoroutine()
-        {
-            while (true)
-            {
-                Shoot();
-                yield return new WaitForSeconds(timeBeetweenShots);
-            }
-        }
+ protected virtual IEnumerator ShootCoroutine()
+ 
+    {
+       while (true)
+       {
+          Shoot();
+          yield return new WaitForSeconds(timeBeetweenShots);
+       }
+    }
 
     public void Shoot()
     {
