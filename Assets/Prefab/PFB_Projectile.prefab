@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDestroy: 2
-  damageAmount: 1
+  damageAmount: 5
   speed: 50
 --- !u!54 &-209338491089919573
 Rigidbody:
