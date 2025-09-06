@@ -79,12 +79,16 @@ namespace Enemy
         #endregion
 
 
-
-
         public void Damage(float damage)
         {
             Debug.Log("Damage");
             OnDamage(damage);
+        }
+
+        public void Damage(float damage,Vector3 dir)
+        {
+            OnDamage(damage);
+            transform.DOMove(transform.position - dir, .1f);
         }
     }
     

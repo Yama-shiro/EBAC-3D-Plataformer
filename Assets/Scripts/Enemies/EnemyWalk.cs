@@ -24,6 +24,7 @@ public class EnemyWalk : EnemyBase
             }
 
             transform.position = Vector3.MoveTowards(transform.position, wayPoints[_index].transform.position, Time.deltaTime * speed );
+            transform.LookAt(wayPoints[_index].transform.position);
         }
     }
 }
